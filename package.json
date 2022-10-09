@@ -1,14 +1,21 @@
 {
   "name": "is-iso-date",
-  "version": "0.0.1",
   "description": "A simple utility to check if a string is an ISO-compliant date.",
-  "main": "index.js",
-  "scripts": {
-    "test": "node test/index.js"
-  },
+  "author": "Andy Burke <aburke@bitflood.org>",
+  "license": "MIT",
+  "version": "0.1.0",
   "repository": {
     "type": "git",
-    "url": "https://github.com/honeinc/is-iso-date.git"
+    "url": "https://github.com/arn4v/is-iso-date.git"
+  },
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "rm -rf dist && tsup src/index.ts --dts",
+    "test": "vitest"
   },
   "keywords": [
     "date",
@@ -18,11 +25,9 @@
     "regexp",
     "regular expression"
   ],
-  "author": "Andy Burke <aburke@bitflood.org>",
-  "license": "MIT",
   "devDependencies": {
-    "tape": "^3.4.0"
-  },
-  "dependencies": {
+    "tsup": "^6.2.3",
+    "typescript": "^4.8.4",
+    "vitest": "^0.24.0"
   }
 }

@@ -1,9 +1,9 @@
 {
-  "name": "is-iso-date",
+  "name": "@arn4v/is-iso-date",
   "description": "A simple utility to check if a string is an ISO-compliant date.",
-  "author": "Andy Burke <aburke@bitflood.org>",
+  "author":  "Andy Burke <aburke@bitflood.org>, Arnav Gosain <arnav@arnavgosain.com>",
   "license": "MIT",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "repository": {
     "type": "git",
     "url": "https://github.com/arn4v/is-iso-date.git"
